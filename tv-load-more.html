@@ -2,16 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/js-module-12/favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/js-module-12/index.js"></script>
+    <title>TV-load-more</title>
+    <script type="module" crossorigin src="/js-module-12/tv-load-more.js"></script>
     <link rel="modulepreload" crossorigin href="/js-module-12/assets/styles-ZA-NYoTW.js">
     <link rel="modulepreload" crossorigin href="/js-module-12/assets/vendor-CwgyD8nH.js">
     <link rel="stylesheet" crossorigin href="/js-module-12/assets/styles-C_TV5n3I.css">
@@ -27,7 +21,7 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./tv-load-more.html"
+          <a class="nav-link active" href="./tv-load-more.html"
             >tv-load-more</a
           >
         </li>
@@ -44,20 +38,21 @@
 </header>
 
 
-    <main>  
+    <main>
+      <div class="container">
+        <h1 class="main-title">
+          <span class="main-title-gradient">Welcome</span> to TV-load-more
+        </h1>
+        <a class="back-link" href="./index.html">Go back</a>
+
+      </div>
       <div id="app">
-      <div class="wrapper">
-        <h3>POKEMON</h3>
-        <form class="form-inline search-form">
-          <div class="form-group">
-            <input type="text" class="form-control" name="query" />
-          </div>
+        <ul class="js-movie-list movie-list"></ul>
 
-          <button type="submit" class="btn btn-primary">Search</button>
-        </form>
-
-        <div class="card-container"></div>
-</main>
-
+        <div class="button-container">
+          <button class="js-load-more load-more-hidden">Load more</button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
